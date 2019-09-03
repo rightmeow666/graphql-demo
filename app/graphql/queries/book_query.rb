@@ -5,7 +5,7 @@ module Queries
 
     argument :id, Integer, required: true
 
-    def resolver(id:)
+    def resolve(id:)
       Book.find_by(id: id)
     end
   end
